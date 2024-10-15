@@ -1,0 +1,141 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5500/index.html
+Subject: Cadastro de Pacientes - Fisioterapia
+Date: Tue, 15 Oct 2024 10:56:32 -0300
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--KbKL8owEnXWnPrIxi7KBWS10YwvLd5Z6GtktN9ol9C----"
+
+
+------MultipartBoundary--KbKL8owEnXWnPrIxi7KBWS10YwvLd5Z6GtktN9ol9C----
+Content-Type: text/html
+Content-ID: <frame-B2B06264E1D05B6A728714A99A8A4CCE@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5500/index.html
+
+<!DOCTYPE html><html lang=3D"portuguese"><head><meta http-equiv=3D"Content-=
+Type" content=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Cadastro de Pacientes - Fisioterapia</title>
+   =20
+<link rel=3D"stylesheet" href=3D"http://127.0.0.1:5500/styles.css?_cacheOve=
+rride=3D1729000569567"></head>
+<body>
+    <div class=3D"container">
+        <h1>Cadastro de Pacientes - Fisioterapia</h1>
+
+        <form id=3D"patientForm">
+            <!-- Informa=C3=A7=C3=B5es do Paciente -->
+            <div class=3D"form-group">
+                <label for=3D"name">Nome:</label>
+                <input type=3D"text" id=3D"name" required=3D"">
+            </div>
+           =20
+            <div class=3D"form-group">
+                <label for=3D"address">Endere=C3=A7o:</label>
+                <input type=3D"text" id=3D"address" required=3D"">
+            </div>
+
+            <div class=3D"form-group">
+                <label for=3D"cpf">CPF:</label>
+                <input type=3D"text" id=3D"cpf" required=3D"">
+            </div>
+
+            <div class=3D"form-group">
+                <label for=3D"phone">Telefone:</label>
+                <input type=3D"tel" id=3D"phone" required=3D"">
+            </div>
+
+            <!-- Informa=C3=A7=C3=B5es do Tratamento -->
+            <div class=3D"form-group">
+                <label for=3D"treatment">Atividades/Tratamento:</label>
+                <textarea id=3D"treatment" rows=3D"4" required=3D""></texta=
+rea>
+            </div>
+
+            <div class=3D"form-group">
+                <label for=3D"evolution">Evolu=C3=A7=C3=A3o:</label>
+                <textarea id=3D"evolution" rows=3D"4" required=3D""></texta=
+rea>
+            </div>
+
+            <button type=3D"submit">Cadastrar Paciente</button><br>
+
+
+         <!-- Bot=C3=A3o para exportar a lista de pacientes -->
+         <button id=3D"exportButton">Exportar Pacientes</button>
+
+<!-- Input para importar a lista de pacientes -->
+<input type=3D"file" id=3D"importFile" accept=3D".json">
+
+
+
+        </form>
+
+        <h2>Pacientes Cadastrados</h2>
+        <div id=3D"patientsList"><p>Nenhum paciente cadastrado.</p></div>
+    </div>
+
+
+
+   =20
+<!-- Code injected by live-server -->
+
+
+
+</body></html>
+------MultipartBoundary--KbKL8owEnXWnPrIxi7KBWS10YwvLd5Z6GtktN9ol9C----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5500/styles.css?_cacheOverride=1729000569567
+
+@charset "utf-8";
+
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+
+html, body { height: 100%; font-family: Arial, sans-serif; background-color=
+: rgba(244, 244, 244, 0.776); }
+
+body { display: flex; justify-content: center; align-items: flex-start; pad=
+ding: 20px; overflow-y: auto; }
+
+.container { background-color: rgba(255, 255, 255, 0.345); padding: 20px; b=
+order-radius: 10px; width: 100%; max-width: 600px; box-shadow: rgba(0, 0, 0=
+, 0.1) 0px 4px 8px; margin-bottom: 20px; }
+
+h1, h2 { text-align: center; margin-bottom: 20px; }
+
+form { display: flex; flex-direction: column; }
+
+.form-group { margin-bottom: 15px; }
+
+label { font-weight: bold; margin-bottom: 5px; display: block; }
+
+input[type=3D"text"], input[type=3D"tel"], textarea { width: 100%; padding:=
+ 10px; border: 1px solid rgb(204, 204, 204); border-radius: 5px; font-size:=
+ 16px; }
+
+textarea { resize: vertical; }
+
+button { padding: 10px; background-color: rgb(34, 168, 251); color: white; =
+border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-we=
+ight: bold; }
+
+button:hover { background-color: rgba(247, 10, 10, 0.81); }
+
+#patientsList { margin-top: 20px; }
+
+.patient-card { background-color: rgb(248, 249, 250); padding: 10px; border=
+-radius: 5px; margin-bottom: 10px; border: 1px solid rgb(204, 204, 204); }
+
+.patient-card p { margin: 5px 0px; }
+
+.patient-card button { background-color: rgb(220, 53, 69); border: none; bo=
+rder-radius: 5px; color: white; padding: 5px; cursor: pointer; font-size: 1=
+4px; }
+
+.patient-card button:hover { background-color: rgb(200, 35, 51); }
+------MultipartBoundary--KbKL8owEnXWnPrIxi7KBWS10YwvLd5Z6GtktN9ol9C------
